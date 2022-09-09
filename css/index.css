@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-.contentBtnRegistrar {
+.contentBtnRegistrar{
     width: 50%;
     display: flex;
     align-items: center;
@@ -44,12 +44,12 @@ body {
     border-radius: 12px;
 }
 
-.btnRegistrar, .btnGuardar:hover{
+.btnRegistrar:hover, .btnGuardar:hover{
     background-color: #014c01;
     box-shadow: 1px 1px 1px 1px #000000;
 }
 
-.btnRegistrar, .btnGuardar:active{
+.btnRegistrar:active, .btnGuardar:active{
     background-color: #ffffff;
     color: #008000;
 }
