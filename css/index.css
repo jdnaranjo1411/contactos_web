@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+
+.contentPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentTitulo{
+    width: 50%;
+    text-align: center;
+}
+
+.contentBtnRegistrar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-bottom: 20px;
+}
+
+.contentListaContactos{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tableLista{
+    border-spacing: 15px;
+
+}
+
+.btnRegistrar{
+    padding: 10px;
+    color: #fff;
+    background-color: #008000;
+    border: 0px;
+    border-radius: 12px;
+}
+
+.btnRegistrar:hover{
+    background-color: #014c01;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.btnRegistrar:active{
+    background-color: #ffffff;
+    color: #008000;
+}
+
+.btnModificar{
+    padding: 10px;
+    color: #fff;
+    background-color: blue;
+    border: 0px;
+    border-radius: 12px;
+}
+
+.btnEliminar{
+    padding: 10px;
+    color: #fff;
+    background-color: red;
+    border: 0px;
+    border-radius: 12px;
+}
