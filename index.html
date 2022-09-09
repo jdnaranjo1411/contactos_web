@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>MIS CONTACTOS</title>
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/formulario.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -42,6 +44,33 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </div>
+    <div class="contentModal">
+        <div class="contentFormulario">
+            <div class="btnCerrarModal">
+                <button class="btnCerrar">X</button>
+            </div>
+            <form>
+                <div class="tituloFormulario">
+                    <h2>Registrar</h2>
+                </div>
+                <div class="controlInput">
+                    <label>Nombre:</label>
+                    <input id="nombre" name="nombre" type="text" required>
+                </div>
+                <div class="controlInput">
+                    <label >Email:</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div class="controlInput">
+                    <label>Telefono:</label>
+                    <input id="telefono" name="telefono" type="tel" required>
+                </div>
+                <div class="controlBtns">
+                    <button type="submit" class="btnGuardar">guardar</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>

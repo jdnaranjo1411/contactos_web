@@ -1,0 +1,73 @@
+.contentModal{
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+.contentFormulario{
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px #000;
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+}
+
+.btnCerrarModal{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.btnCerrar, .btnCerrar:Hover, .btnCerrar:active{
+    border: 0px;
+    background-color: rgb(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.btnCerrar:Hover{
+    font-weight: bolder;
+}
+
+.tituloFormulario{
+ width: 100%;
+ text-align: center;   
+}
+
+.controlInput{
+    margin-top: 15px;
+    margin-bottom: 15px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.controlInput label{
+    width: 62px;
+    padding-right: 15px;
+}
+
+.controlInput input{
+    border: 0px;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.controlInput input:focus{
+    border: 0px;
+    border-bottom: 2px solid #349d00;
+}
+
+.controlBtns{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
