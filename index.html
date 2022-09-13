@@ -15,12 +15,12 @@
             <h1>Mis contactos</h1>
         </div>
         <div class="contentBtnRegistrar">
-            <button class="btnRegistrar">REGISTRAR</button>
+            <button id="registrarBtn" class="btnRegistrar">REGISTRAR</button>
         </div>
         <div class="contentListaContactos">
             <table id="contactosTable" class="tableLista">
                 <thead>
-                <!--
+                
                     <tr>
                         <th>No.</th>
                         <th>Nombre</th>
@@ -29,10 +29,11 @@
                         <th>Modificar</th>
                         <th>Eliminar</th>
                     </tr>
-                    -->
+    
                 </thead>
                 <tbody>
                     <tr>
+                        <!--
                         <td>1</td>
                         <td>Maria Camila Gomez</td>
                         <td>mcamila@ejemplo.com</td>
@@ -43,17 +44,18 @@
                         <td>
                             <button class="btnEliminar">E</button>
                         </td>
+                    -->
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <div class="contentModal ocultarModal">
+    <div id="formularioModal" class="contentModal ocultarModal">
         <div class="contentFormulario">
             <div class="btnCerrarModal">
-                <button class="btnCerrar">X</button>
+                <button id="cerrarModalBtn" class="btnCerrar">X</button>
             </div>
-            <form>
+            <form id="formularioContacto" name="formContacto">
                 <div class="tituloFormulario">
                     <h2>Registrar</h2>
                 </div>
