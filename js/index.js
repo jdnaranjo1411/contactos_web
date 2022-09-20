@@ -1,6 +1,6 @@
 let contactos=[
     {
-     Nombre:'Maria Camila Gomez',
+     nombre:'Maria Camila Gomez',
      email:'mcamila@ejemplo.com',
      telefono:'123456'},
      {
@@ -9,6 +9,9 @@ let contactos=[
         telefono:'123456'
      }
 ]
+
+let operacion = ''
+let indexRegistroSeleccionado = null
 
 function mostrarContactos(){
     const tbody = document
@@ -23,6 +26,8 @@ function mostrarContactos(){
         fila += '  <td>'+contacto.nombre+'</td>'
         fila += '  <td>'+contacto.email+'</td>'
         fila += '  <td>'+contacto.telefono+'</td>'
+        fila += '  <td><button class="btnModificar" onclick="onClickModificar('+id+')">M</button></td>'
+        fila += '  <td><button class="btnEliminar">E</button></td>'
         fila +='</tr>'
         tbody.innerHTML += fila
     }
@@ -43,6 +48,8 @@ document.getElementById('cerrarModalBtn').addEventListener('click', () =>{
 document.getElementById('registrarBtn').addEventListener('click',() =>{
     document.getElementById('formularioModal')
     .classList.remove('ocultarModal')
+    document.getElementById('tituloForm').innerText = "Registrar"
+    operacion = 'Registrar'
 })
 
 document.getElementById('formularioContacto').addEventListener('submit',(ev)=>{
@@ -53,7 +60,24 @@ document.getElementById('formularioContacto').addEventListener('submit',(ev)=>{
         email: document.forms['formContacto']['email'].value,
         telefono: document.forms['formContacto']['telefono'].value,
     }
+    if(operacion =='Registrar'){
     contactos.push(contacto)
+    }else{
+        contactos[indexRegistroSeleccionado] = contacto
+    }
     cerrarModal()
     mostrarContactos()
 })
+
+function onClickModificar(id){
+    document.getElementById('formularioModal')
+    .classList.remove('ocultarModal')
+    document.getElementById('tituloForm').innerText = "Modificar"
+    indexRegistroSeleccionado = id-1
+    const contacto =  contactos[indexRegistroSeleccionado]
+    const formulario = document.forms['formContacto']
+    formulario['nombre'].value = contacto.nombre;
+    formulario['email'].value = contacto.email;
+    formulario['telefono'].value = contacto.telefono;
+    operacion = 'Modificar'
+}
