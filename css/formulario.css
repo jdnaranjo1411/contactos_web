@@ -1,4 +1,4 @@
-.contentModal{
+.contentModal {
     position: fixed;
     z-index: 1;
     left: 0px;
@@ -10,61 +10,64 @@
     align-items: center;
     background-color: rgb(255, 255, 255, 0.7);
 }
-.contentFormulario{
-    background-color: #fff;
-    box-shadow: 1px 1px 1px 1px #000;
+
+.contentFormulario {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 12px 2px rgb(0 0 0 / 29%);
     border-radius: 15px;
     padding: 25px;
     position: relative;
 }
 
-.btnCerrarModal{
+.btnCerrarModal {
     position: absolute;
     top: 7px;
     right: 7px;
 }
 
-.btnCerrar, .btnCerrar:Hover, .btnCerrar:active{
-    border: 0px;
+.btnCerrar,
+.btnCerrar:hover,
+.btnCerrar:active {
+    border: 0;
     background-color: rgb(255, 255, 255, 0);
     cursor: pointer;
 }
 
-.btnCerrar:Hover{
+.btnCerrar:hover {
     font-weight: bolder;
 }
 
-.tituloFormulario{
- width: 100%;
- text-align: center;   
+.tituloFormulario {
+    width: 100%;
+    text-align: center;
 }
 
-.controlInput{
+.controlInput {
     margin-top: 15px;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.controlInput label{
+.controlInput label {
     width: 62px;
-    padding-right: 15px;
+    padding-right: 5px;
 }
 
-.controlInput input{
+.controlInput input {
     border: 0px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #000000;
     outline: none;
 }
 
-.controlInput input:focus{
+.controlInput input:focus {
     border: 0px;
     border-bottom: 2px solid #349d00;
 }
 
-.controlBtns{
+.controlBtns {
     padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
@@ -72,7 +75,6 @@
     align-items: center;
 }
 
-.ocultarModal{
+.ocularModal {
     display: none;
-    
 }

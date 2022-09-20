@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>MIS CONTACTOS</title>
+    <title>Mis contactos</title>
     <link href="css/index.css" rel="stylesheet">
     <link href="css/formulario.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -15,47 +14,45 @@
             <h1>Mis contactos</h1>
         </div>
         <div class="contentBtnRegistrar">
-            <button id="registrarBtn" class="btnRegistrar">REGISTRAR</button>
+            <button id="registrarBtn" class="btnRegistrar">Registrar</button>
         </div>
         <div class="contentListaContactos">
             <table id="contactosTable" class="tableLista">
                 <thead>
-                
                     <tr>
                         <th>No.</th>
                         <th>Nombre</th>
                         <th>Email</th>
-                        <th>Telefono</th>
+                        <th>Teléfono</th>
                         <th>Modificar</th>
                         <th>Eliminar</th>
                     </tr>
-    
                 </thead>
                 <tbody>
+                    <!--
                     <tr>
-                        <!--
                         <td>1</td>
-                        <td>Maria Camila Gomez</td>
+                        <td>María Camila Gomez</td>
                         <td>mcamila@ejemplo.com</td>
                         <td>123456</td>
                         <td>
                             <button class="btnModificar">M</button>
                         </td>
                         <td>
-                            <button class="btnEliminar">E</button>
+                            <button class="btnElimiar">E</button>
                         </td>
-                    -->
                     </tr>
+                    -->
                 </tbody>
             </table>
         </div>
     </div>
-    <div id="formularioModal" class="contentModal ocultarModal">
+    <div id="formularioModal" class="contentModal ocularModal">
         <div class="contentFormulario">
             <div class="btnCerrarModal">
                 <button id="cerrarModalBtn" class="btnCerrar">X</button>
             </div>
-            <form id="formularioContacto" name="formContacto">
+            <form id="fomularioContacto" name="formContacto">
                 <div class="tituloFormulario">
                     <h2 id="tituloForm">Registrar</h2>
                 </div>
@@ -64,17 +61,31 @@
                     <input id="nombre" name="nombre" type="text" required>
                 </div>
                 <div class="controlInput">
-                    <label >Email:</label>
+                    <label>Email:</label>
                     <input id="email" name="email" type="email" required>
                 </div>
                 <div class="controlInput">
-                    <label>Telefono:</label>
+                    <label>Teléfono:</label>
                     <input id="telefono" name="telefono" type="tel" required>
                 </div>
                 <div class="controlBtns">
-                    <button type="submit" class="btnGuardar">guardar</button>
+                    <button type="submit" class="btnGuardar">Guardar</button>
                 </div>
             </form>
+        </div>
+    </div>
+    <div id="msgModal" class="contentModal ocularModal">
+        <div class="contentFormulario">
+            <div class="btnCerrarModal">
+                <button id="cerrarMsgModalBtn" class="btnCerrar" onclick="cerrarMsgModal()">X</button>
+            </div>
+            <div name="formContacto">
+                <p>¿Desea eliminar el registro?</p>
+                <div class="controlBtns">
+                    <button class="btnElimiar" onclick="onClickConfirmarEliminar()">Si</button>
+                    <button class="btnGuardar" onclick="cerrarMsgModal()">No</button>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/index.js"></script>
